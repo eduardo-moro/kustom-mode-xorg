@@ -30,7 +30,7 @@ function setDisplay(){
     fi
     read -r -p "Do you want to use the mode $name to $display? [y/n] (enter = n)" response
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]] 
-        then sudo xrandr --output $display $name
+        then sudo xrandr --output $display --mode $name
     fi
     
     echo "thank you for using my app :)"
